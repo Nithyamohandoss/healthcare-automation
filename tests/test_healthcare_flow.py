@@ -25,7 +25,7 @@ def test_healthcare_enrollment():
 
         WebDriverWait(driver, 10).until(EC.url_contains("/secure"))
         assert "You logged into a secure area!" in driver.page_source
-        time.sleep(10)
+        time.sleep(15)
     finally:
 
         driver.quit()
